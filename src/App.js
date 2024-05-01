@@ -1,13 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AppBar, Toolbar, Typography, Button, Container } from "@mui/material";
 import Home from "./home";
 import Resume from "./resume";
 import logo from "./resources/logo.png";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <>
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
@@ -25,13 +25,13 @@ function App() {
           </Button>
         </Toolbar>
       </AppBar>
-      <Container sx={{ marginTop: "20px" }}>
+      <Container>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/resume" element={<Resume />}></Route>
         </Routes>
       </Container>
-    </Router>
+    </>
   );
 }
 
