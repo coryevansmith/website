@@ -12,9 +12,9 @@ function Header() {
             src={logo}
             alt="Logo"
             style={{
-              marginTop: "1vh",
-              marginBottom: ".5vw",
-              height: "3vh",
+              marginTop: ".5rem",
+              marginBottom: ".5rem",
+              height: "2rem",
             }}
           />
         </Typography>
