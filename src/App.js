@@ -1,40 +1,32 @@
 import React from "react";
-import { AppBar, Toolbar, Typography, Button, Container } from "@mui/material";
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import About from "./about";
 import Resume from "./resume";
-import logo from "./resources/logo.png";
+import Header from "./header";
+import { Container } from "@mui/material";
+import styled from "styled-components";
+import Footer from "./footer";
 
 function App() {
+  const BodyContainer = styled.section`
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  `;
+
   return (
     <>
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <img
-              src={logo}
-              alt="Logo"
-              style={{
-                marginTop: ".5vh",
-                marginBottom: ".5vw",
-                height: "5vh",
-              }}
-            />
-          </Typography>
-          <Button color="inherit" component={Link} to="/">
-            About
-          </Button>
-          <Button color="inherit" component={Link} to="/resume">
-            Resume
-          </Button>
-        </Toolbar>
-      </AppBar>
-      <div style={{ height: "92vh" }}>
+      <BodyContainer>
+        <Header />
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/resume" element={<Resume />} />
         </Routes>
-      </div>
+        <Footer />
+      </BodyContainer>
     </>
   );
 }

@@ -1,11 +1,12 @@
-import { Typography } from "@mui/material";
+import { Height } from "@mui/icons-material";
+import { Typography, styled } from "@mui/material";
 import React, { useState } from "react";
 
 function Resume() {
   const iframeStyle = {
     width: "100%",
-    height: "100%",
     border: "none",
+    height: "calc(100vh - 10vh - 64px)",
   };
 
   return (
