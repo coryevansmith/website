@@ -27,7 +27,7 @@ function App() {
       </AppBar>
       <Container>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="" element={<Home />}></Route>
           <Route path="/resume" element={<Resume />}></Route>
         </Routes>
       </Container>
