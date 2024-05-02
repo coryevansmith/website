@@ -12,6 +12,9 @@ const theme = createTheme({
     error: {
       main: red.A400,
     },
+    background: {
+      paper: "#f6f6f6",
+    },
   },
 });
 

@@ -1,12 +1,18 @@
-import { Box, Container, Typography, Grid } from "@mui/material";
+import { Box, Container, Typography, Grid, Card } from "@mui/material";
 import React from "react";
 import profileImage from "./resources/profileImage.jpg";
 
 function About() {
   return (
-    <div style={{ height: "calc(100vh - 10vh - 64px)" }}>
-      <h1>UNDER CONSTRUCTION</h1>
-    </div>
+    <Box style={{ height: "calc(100vh - 10vh - 64px)" }}>
+      {/* <Card>
+        <h1>UNDER CONSTRUCTION</h1>
+      </Card> */}
+      <Typography variant="h1" align="center">
+        UNDER CONSTRUCTION
+      </Typography>
+    </Box>
+
     // <Grid
     //   padding={"1rem"}
     //   container

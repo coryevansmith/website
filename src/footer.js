@@ -1,26 +1,22 @@
+import { Box, Paper } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
 
 function Footer() {
-  const FooterContainer = styled.footer`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: static;
-    height: 10vh;
-  `;
-
-  const CopyRight = styled.p`
-    float: left;
-    font-size: 1rem;
-    margin-top: 2rem;
-  `;
   return (
-    <FooterContainer>
-      <CopyRight>© 2024 Cory Evan Smith</CopyRight>
-    </FooterContainer>
+    <Box
+      sx={{
+        width: "100%",
+        height: "10vh",
+        bgcolor: "primary.main",
+        color: "white",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <p>© 2024 Cory Evan Smith</p>
+    </Box>
   );
 }
 
