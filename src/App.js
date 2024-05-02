@@ -1,7 +1,7 @@
 import React from "react";
 import { AppBar, Toolbar, Typography, Button, Container } from "@mui/material";
 import { Link, Route, Routes } from "react-router-dom";
-import Home from "./home";
+import About from "./about";
 import Resume from "./resume";
 import logo from "./resources/logo.png";
 
@@ -14,11 +14,15 @@ function App() {
             <img
               src={logo}
               alt="Logo"
-              style={{ marginRight: "10px", height: "50px" }}
+              style={{
+                marginTop: ".5rem",
+                marginBottom: ".5rem",
+                height: "50px",
+              }}
             />
           </Typography>
           <Button color="inherit" component={Link} to="/">
-            Home
+            About
           </Button>
           <Button color="inherit" component={Link} to="/resume">
             Resume
@@ -27,7 +31,7 @@ function App() {
       </AppBar>
       <div>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<About />} />
           <Route path="/resume" element={<Resume />} />
         </Routes>
       </div>

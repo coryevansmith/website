@@ -3,12 +3,16 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { HashRouter } from "react-router-dom";
+import { ThemeProvider } from "@emotion/react";
+import theme from "./theme";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <HashRouter>
-      <App />
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
     </HashRouter>
   </React.StrictMode>
 );
