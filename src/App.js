@@ -1,9 +1,9 @@
 import React from "react";
 import { AppBar, Toolbar, Typography, Button, Container } from "@mui/material";
+import { Link, Route, Routes } from "react-router-dom";
 import Home from "./home";
 import Resume from "./resume";
 import logo from "./resources/logo.png";
-import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -17,18 +17,18 @@ function App() {
               style={{ marginRight: "10px", height: "50px" }}
             />
           </Typography>
-          <Button color="inherit" href="/">
+          <Button color="inherit" component={Link} to="/">
             Home
           </Button>
-          <Button color="inherit" href="/resume">
+          <Button color="inherit" component={Link} to="/resume">
             Resume
           </Button>
         </Toolbar>
       </AppBar>
       <Container>
         <Routes>
-          <Route path="" element={<Home />}></Route>
-          <Route path="/resume" element={<Resume />}></Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </Container>
     </>
