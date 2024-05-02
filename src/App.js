@@ -15,9 +15,9 @@ function App() {
               src={logo}
               alt="Logo"
               style={{
-                marginTop: ".5rem",
-                marginBottom: ".5rem",
-                height: "50px",
+                marginTop: ".5vh",
+                marginBottom: ".5vw",
+                height: "5vh",
               }}
             />
           </Typography>
@@ -29,7 +29,7 @@ function App() {
           </Button>
         </Toolbar>
       </AppBar>
-      <div>
+      <div style={{ height: "92vh" }}>
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/resume" element={<Resume />} />
