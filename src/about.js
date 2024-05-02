@@ -17,6 +17,9 @@ function About() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        background: "rgb(34,34,34)",
+        background:
+          "linear-gradient(13deg, rgba(34,34,34,0.5830707282913166) 1%, rgba(246,246,246,1) 100%)",
       }}
     >
       <Card
