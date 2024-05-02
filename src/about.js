@@ -49,23 +49,24 @@ function About() {
                 user experiences and drive customer satisfaction.
               </Typography>
               <Typography variant="body1" paragraph>
-                In my recent role at Neighborly, I played a key role in
-                developing and launching two new applications, both of which
-                have received rave reviews from over 10,000 users, with ratings
-                of 4.5 stars or higher. I take pride in my ability to
-                collaborate effectively with cross-functional teams, and my
-                experience includes developing a rules engine that improved
-                customer satisfaction by 25% for a call center application.
-                Additionally, I have a proven track record of reducing downtime
-                and increasing system reliability by maintaining endpoints for
-                multiple applications.
+                In my recent role at Neighborly, I play a key role in developing
+                and launching multiple new applications, all of which have
+                received positive feedback from users. I take pride in my
+                ability to collaborate effectively with cross-functional teams,
+                and my experience includes developing a rules engine that
+                improved customer satisfaction by 25% for a call center
+                application. Additionally, I have a proven track record of
+                reducing downtime and increasing system reliability by
+                maintaining endpoints for multiple applications.
               </Typography>
               <Typography variant="body1" paragraph>
-                My expertise spans a wide range of technologies, including C#,
-                .NET, Java, JavaScript, Python, and more. I am certified in Java
-                Development and Mobile App Development, and I am constantly
-                expanding my skill set to stay ahead in this rapidly evolving
-                field.
+                With a full-stack development background, my expertise covers a
+                wide range of technologies, including React.js for front-end
+                development and C#/.NET for back-end development. I'm also
+                proficient in Java, JavaScript, Python, and more. I hold
+                certifications in Java Development and Mobile App Development,
+                and I am committed to continuously expanding my skill set to
+                stay ahead in this rapidly evolving field.
               </Typography>
               <Typography variant="body1" paragraph>
                 Outside of work, I enjoy activities such as computer building,
