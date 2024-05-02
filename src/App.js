@@ -25,12 +25,12 @@ function App() {
           </Button>
         </Toolbar>
       </AppBar>
-      <Container>
+      <div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/resume" element={<Resume />} />
         </Routes>
-      </Container>
+      </div>
     </>
   );
 }
