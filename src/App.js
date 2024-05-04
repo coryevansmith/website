@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import About from "./about";
 import Resume from "./resume";
+import Home from "./home";
 import Header from "./header";
 import { Container } from "@mui/material";
 import styled from "styled-components";
@@ -22,8 +23,9 @@ function App() {
       <BodyContainer>
         <Header />
         <Routes>
-          <Route path="/" element={<About />} />
+          <Route path="/" element={<Home />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
       </BodyContainer>

@@ -8,17 +8,19 @@ function Header() {
     <AppBar position="static">
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          <img
-            src={logo}
-            alt="Logo"
-            style={{
-              marginTop: ".5rem",
-              marginBottom: ".5rem",
-              height: "2rem",
-            }}
-          />
+          <a href="/">
+            <img
+              src={logo}
+              alt="Logo"
+              style={{
+                marginTop: ".5rem",
+                marginBottom: ".5rem",
+                height: "2rem",
+              }}
+            />
+          </a>
         </Typography>
-        <Button color="inherit" component={Link} to="/">
+        <Button color="inherit" component={Link} to="/about">
           About
         </Button>
         <Button color="inherit" component={Link} to="/resume">
