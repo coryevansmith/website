@@ -7,6 +7,7 @@ import Header from "./header";
 import { Container } from "@mui/material";
 import styled from "styled-components";
 import Footer from "./footer";
+import { Helmet } from "react-helmet";
 
 function App() {
   const BodyContainer = styled.section`
@@ -20,6 +21,17 @@ function App() {
 
   return (
     <>
+      <Helmet>
+        <title>CS Development</title>
+        <meta
+          name="description"
+          content="Welcome to Cory Smith's website! Cory Smith is a passionate and dedicated
+      full stack developer with a keen eye for detail and a love for
+      problem-solving. With years of experience in both front-end and back-end
+      development, Cory specializes in building responsive and user-friendly web
+      applications."
+        />
+      </Helmet>
       <BodyContainer>
         <Header />
         <Routes>
