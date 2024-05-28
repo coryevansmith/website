@@ -1,8 +1,11 @@
-import { Box, Paper } from "@mui/material";
+import { GitHub, LinkedIn } from "@mui/icons-material";
+import { Box, IconButton, Paper } from "@mui/material";
 import React from "react";
-import styled from "styled-components";
 
 function Footer() {
+  const handleOpenExternal = (link) => {
+    window.location.href = link;
+  };
   return (
     <Box
       sx={{
@@ -13,9 +16,30 @@ function Footer() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        flexDirection: "column",
       }}
     >
-      <p>© 2024 Cory Evan Smith</p>
+      <Box flex={1}>
+        <p>© 2024 Cory Evan Smith</p>
+      </Box>
+      <Box flex={1}>
+        <IconButton
+          color="secondary"
+          onClick={() => {
+            handleOpenExternal("https://www.linkedin.com/in/coryevansmith/");
+          }}
+        >
+          <LinkedIn />
+        </IconButton>
+        <IconButton
+          color="secondary"
+          onClick={() => {
+            handleOpenExternal("https://github.com/coryevansmith");
+          }}
+        >
+          <GitHub />
+        </IconButton>
+      </Box>
     </Box>
   );
 }
