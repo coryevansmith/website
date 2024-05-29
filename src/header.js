@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { AppBar, Toolbar, Typography, Button, Container } from "@mui/material";
+import React from "react";
+import { AppBar, Toolbar, Typography, Button, IconButton } from "@mui/material";
 import logo from "./resources/logo.png";
 import { Link } from "react-router-dom";
 
@@ -8,7 +8,7 @@ function Header() {
     <AppBar position="static">
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          <a href="/">
+          <IconButton component={Link} to="/">
             <img
               src={logo}
               alt="Logo"
@@ -18,7 +18,7 @@ function Header() {
                 height: "2rem",
               }}
             />
-          </a>
+          </IconButton>
         </Typography>
         <Button color="inherit" component={Link} to="/about">
           About

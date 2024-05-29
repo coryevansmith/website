@@ -4,7 +4,6 @@ import About from "./about";
 import Resume from "./resume";
 import Home from "./home";
 import Header from "./header";
-import { Container } from "@mui/material";
 import styled from "styled-components";
 import Footer from "./footer";
 import { Helmet } from "react-helmet";
