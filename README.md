@@ -1,3 +1,3 @@
-#Cory Smith's website
+# Cory Smith's website
 
 This resume website is currently under construction 
