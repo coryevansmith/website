@@ -7,6 +7,7 @@ import Header from "./pages/header";
 import styled from "styled-components";
 import Footer from "./pages/footer";
 import { Helmet } from "react-helmet";
+import Contact from "./pages/contact";
 
 function App() {
   const BodyContainer = styled.section`
@@ -37,6 +38,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </BodyContainer>
