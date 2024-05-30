@@ -14,7 +14,7 @@ function Home() {
   return (
     <Box
       style={{
-        minHeight: "calc(100vh - 10vh - 64px)",
+        minHeight: "50rem",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
