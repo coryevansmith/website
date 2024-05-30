@@ -1,11 +1,11 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import About from "./about";
-import Resume from "./resume";
-import Home from "./home";
-import Header from "./header";
+import About from "./pages/about";
+import Resume from "./pages/resume";
+import Home from "./pages/home";
+import Header from "./pages/header";
 import styled from "styled-components";
-import Footer from "./footer";
+import Footer from "./pages/footer";
 import { Helmet } from "react-helmet";
 
 function App() {

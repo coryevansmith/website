@@ -1,6 +1,6 @@
 import React from "react";
 import { AppBar, Toolbar, Typography, Button, IconButton } from "@mui/material";
-import logo from "./resources/logo.png";
+import logo from "../resources/logo.png";
 import { Link } from "react-router-dom";
 
 function Header() {

@@ -7,13 +7,12 @@ import {
   CardMedia,
 } from "@mui/material";
 import React from "react";
-import profileImage from "./resources/profileImage.jpg";
+import profileImage from "../resources/profileImage.jpg";
 
 function About() {
   return (
     <Box
       style={{
-        minHeight: "calc(100vh - 10vh - 64px)",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -28,6 +27,8 @@ function About() {
           display: "flex",
           flexDirection: "column",
           alignItems: "stretch",
+          marginTop: "2rem",
+          marginBottom: "2rem"
         }}
       >
         <Grid container>

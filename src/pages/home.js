@@ -8,8 +8,7 @@ import {
   Icon,
 } from "@mui/material";
 import React from "react";
-import profileImage from "./resources/profileImage.jpg";
-import backgroundPhoto from "./resources/webfactory-ltd-NoOrDKxUfzo-unsplash.jpg";
+import backgroundPhoto from "../resources/webfactory-ltd-NoOrDKxUfzo-unsplash.jpg";
 
 function Home() {
   return (
