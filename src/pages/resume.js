@@ -4,7 +4,7 @@ function Resume() {
   const iframeStyle = {
     width: "100%",
     border: "none",
-    height: "150rem",
+    height: "100vh",
 
   };
 
