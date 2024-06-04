@@ -18,7 +18,7 @@ const theme = createTheme({
     h1: {
       marginTop: "2rem",
       textAlign: "center",
-      fontSize: "4rem", // default for small screens
+      fontSize: "4rem",
       "@media (min-width:600px)": {
         fontSize: "4rem",
       },
