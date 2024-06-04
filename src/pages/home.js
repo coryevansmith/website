@@ -1,6 +1,7 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
 import backgroundPhoto from "../resources/frontPage.jpg";
+import { typography } from "@mui/system";
 
 function Home() {
   return (
@@ -11,7 +12,9 @@ function Home() {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-    ></Box>
+    >
+      <Typography variant="h1">CS Development</Typography>
+    </Box>
   );
 }
 
