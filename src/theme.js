@@ -31,6 +31,9 @@ const theme = createTheme({
       fontWeight: "bold",
       fontFamily: "DotGothic16",
     },
+    h4: {
+      fontFamily: "DotGothic16",
+    },
   },
   palette: {
     primary: {
