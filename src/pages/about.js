@@ -13,6 +13,7 @@ function About() {
   return (
     <Box
       style={{
+        minHeight: "100vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -28,7 +29,7 @@ function About() {
           flexDirection: "column",
           alignItems: "stretch",
           marginTop: "2rem",
-          marginBottom: "2rem"
+          marginBottom: "2rem",
         }}
       >
         <Grid container>
