@@ -28,6 +28,8 @@ const theme = createTheme({
       "@media (min-width:1280px)": {
         fontSize: "5rem",
       },
+      fontWeight: "bold",
+      fontFamily: "DotGothic16",
     },
   },
   palette: {
