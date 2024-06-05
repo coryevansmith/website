@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import backgroundPhoto from "../resources/frontPage.jpg";
-import { typography } from "@mui/system";
+import backgroundPhoto from "../resources/frontPage.png";
 
 function Home() {
   return (
