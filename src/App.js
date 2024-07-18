@@ -8,6 +8,7 @@ import styled from "styled-components";
 import Footer from "./pages/footer";
 import { Helmet } from "react-helmet";
 import Contact from "./pages/contact";
+import Gallery from "./pages/gallery";
 
 function App() {
   const BodyContainer = styled.section`
@@ -39,6 +40,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
         <Footer />
       </BodyContainer>
