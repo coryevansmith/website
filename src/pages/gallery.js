@@ -24,11 +24,11 @@ function Gallery() {
               alt={item.title}
               loading="lazy"
             />
-            <ImageListItemBar
+            {/* <ImageListItemBar
               title={item.title}
               subtitle={<span>{item.desc}</span>}
               position="below"
-            />
+            /> */}
           </ImageListItem>
         ))}
       </ImageList>
