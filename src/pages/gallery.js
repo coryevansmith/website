@@ -1,24 +1,8 @@
 import { Box, ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
 import React from "react";
+import imageList from "../handlers/galleryHandler";
 
 function Gallery() {
-  const itemData = [
-    // {
-    //   img: "https://i.imgur.com/CH4uklD.jpg",
-    //   title: "test",
-    //   desc: "@test",
-    // },
-    // {
-    //   img: "https://i.imgur.com/kZlyAQh.jpg",
-    //   title: "test",
-    //   desc: "@test",
-    // },
-    // {
-    //   img: "https://i.imgur.com/7ku0OKE.jpg",
-    //   title: "test",
-    //   desc: "@test",
-    // },
-  ];
   return (
     <Box
       style={{
@@ -32,7 +16,7 @@ function Gallery() {
       }}
     >
       <ImageList sx={{ width: "80%" }}>
-        {itemData.map((item) => (
+        {imageList.map((item) => (
           <ImageListItem key={item.img}>
             <img
               srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
