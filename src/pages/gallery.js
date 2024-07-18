@@ -1,9 +1,18 @@
-import { Box, ImageList, ImageListItem, CircularProgress } from "@mui/material";
+import {
+  Box,
+  ImageList,
+  ImageListItem,
+  CircularProgress,
+  Dialog,
+  DialogContent,
+} from "@mui/material";
 import React, { useState, useEffect } from "react";
 import imageList from "../handlers/galleryHandler";
 
 function Gallery() {
   const [loading, setLoading] = useState(true);
+  const [open, setOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
     const imagePromises = imageList.map((item) => {
@@ -18,6 +27,16 @@ function Gallery() {
       setLoading(false);
     });
   }, []);
+
+  const handleClickOpen = (img) => {
+    setSelectedImage(img);
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+    setSelectedImage(null);
+  };
 
   return (
     <Box
@@ -46,7 +65,10 @@ function Gallery() {
       {!loading && (
         <ImageList sx={{ width: "80%" }}>
           {imageList.map((item) => (
-            <ImageListItem key={item.img}>
+            <ImageListItem
+              key={item.img}
+              onClick={() => handleClickOpen(item.img)}
+            >
               <img
                 srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                 src={`${item.img}?w=248&fit=crop&auto=format`}
@@ -62,6 +84,18 @@ function Gallery() {
           ))}
         </ImageList>
       )}
+      <Dialog open={open} onClose={handleClose} maxWidth="lg">
+        <DialogContent>
+          <img
+            src={selectedImage}
+            alt=""
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+          />
+        </DialogContent>
+      </Dialog>
     </Box>
   );
 }
