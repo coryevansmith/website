@@ -5,6 +5,7 @@ import {
   CircularProgress,
   Dialog,
   DialogContent,
+  ImageListItemBar,
 } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import imageList from "../handlers/galleryHandler";
@@ -70,10 +71,13 @@ function Gallery() {
               onClick={() => handleClickOpen(item.img)}
             >
               <img
-                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                src={`${item.img}?w=248&fit=crop&auto=format`}
+                srcSet={`${item.img}`}
+                src={`${item.img}`}
                 alt={item.title}
                 loading="lazy"
+                style={{
+                  height: "500px",
+                }}
               />
               {/* <ImageListItemBar
                 title={item.title}

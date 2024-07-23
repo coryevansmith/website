@@ -1,4 +1,5 @@
 // src/handlers/galleryHandler.js
+import metadata from "../resources/GalleryPhotos/imageMetaData.json";
 
 const images = require.context(
   "../resources/GalleryPhotos",
@@ -8,10 +9,11 @@ const images = require.context(
 
 const imageList = images.keys().map((path) => {
   const fileName = path.replace("./", "");
+  const fileMetadata = metadata[fileName];
   return {
     img: images(path),
-    // title: fileName.split(".")[0],
-    // desc: "Description here",
+    title: fileMetadata?.title || "",
+    desc: fileMetadata?.desc || "",
   };
 });
 
