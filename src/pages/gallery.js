@@ -5,7 +5,7 @@ import {
   CircularProgress,
   Dialog,
   DialogContent,
-  ImageListItemBar,
+  // ImageListItemBar, // Uncomment if needed
 } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import imageList from "../handlers/galleryHandler";
@@ -19,7 +19,7 @@ function Gallery() {
     const imagePromises = imageList.map((item) => {
       return new Promise((resolve) => {
         const img = new Image();
-        img.src = `${item.img}?w=248&fit=crop&auto=format&dpr=2`;
+        img.src = `${item.img}`;
         img.onload = resolve;
       });
     });
@@ -53,17 +53,9 @@ function Gallery() {
         width: "100%",
       }}
     >
-      {loading && (
-        <CircularProgress
-          style={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-          }}
-        />
-      )}
-      {!loading && (
+      {loading ? (
+        <CircularProgress />
+      ) : (
         <ImageList sx={{ width: "80%" }}>
           {imageList.map((item) => (
             <ImageListItem
@@ -75,9 +67,7 @@ function Gallery() {
                 src={`${item.img}`}
                 alt={item.title}
                 loading="lazy"
-                style={{
-                  height: "500px",
-                }}
+                style={{ height: "30rem" }}
               />
               {/* <ImageListItemBar
                 title={item.title}
