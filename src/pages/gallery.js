@@ -67,7 +67,7 @@ function Gallery() {
                 src={`${item.img}`}
                 alt={item.title}
                 loading="lazy"
-                style={{ height: "30rem" }}
+                style={{ maxHeight: "30rem" }}
               />
               {/* <ImageListItemBar
                 title={item.title}
