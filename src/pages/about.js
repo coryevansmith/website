@@ -51,27 +51,27 @@ function About() {
                 Developer based in Arlington, Texas. With a passion for
                 technology and a drive to create innovative solutions, I am
                 committed to delivering high-quality applications that enhance
-                user experiences and drive customer satisfaction.
+                user experiences and improve customer satisfaction.
               </Typography>
               <Typography variant="body1" paragraph>
-                In my recent role at Neighborly, I play a key role in developing
-                and launching multiple new applications, all of which have
-                received positive feedback from users. I take pride in my
-                ability to collaborate effectively with cross-functional teams,
-                and my experience includes developing a rules engine that
-                improved customer satisfaction by 25% for a call center
-                application. Additionally, I have a proven track record of
-                reducing downtime and increasing system reliability by
-                maintaining endpoints for multiple applications.
+                In my current role at Neighborly, I have contributed to the
+                development and launch of multiple new applications, all of
+                which have received positive feedback from users. I take pride
+                in my ability to collaborate effectively with cross-functional
+                teams, and I have experience building a rules engine for a call
+                center application that improved overall customer engagement.
+                Additionally, I have a solid track record of reducing downtime
+                and increasing system reliability through the maintenance of
+                application endpoints.
               </Typography>
               <Typography variant="body1" paragraph>
-                With a full-stack development background, my expertise covers a
+                With a full-stack development background, my expertise spans a
                 wide range of technologies, including React.js for front-end
                 development and C#/.NET for back-end development. I'm also
                 proficient in Java, JavaScript, Python, and more. I hold
-                certifications in Java Development and Mobile App Development,
-                and I am committed to continuously expanding my skill set to
-                stay ahead in this rapidly evolving field.
+                certifications in Java Development and Mobile App Development
+                and am committed to continuously growing my skill set to stay
+                ahead in this rapidly evolving field.
               </Typography>
               <Typography variant="body1" paragraph>
                 Outside of work, I enjoy activities such as computer building,
