@@ -5,15 +5,16 @@ import {
   CircularProgress,
   Dialog,
   DialogContent,
-  // ImageListItemBar, // Uncomment if needed
+  IconButton,
 } from "@mui/material";
 import React, { useState, useEffect } from "react";
+import { ArrowBack, ArrowForward } from "@mui/icons-material";
 import imageList from "../handlers/galleryHandler";
 
 function Gallery() {
   const [loading, setLoading] = useState(true);
   const [open, setOpen] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
   useEffect(() => {
     const imagePromises = imageList.map((item) => {
@@ -29,14 +30,24 @@ function Gallery() {
     });
   }, []);
 
-  const handleClickOpen = (img) => {
-    setSelectedImage(img);
+  const handleClickOpen = (index) => {
+    setSelectedImageIndex(index);
     setOpen(true);
   };
 
   const handleClose = () => {
     setOpen(false);
-    setSelectedImage(null);
+    setSelectedImageIndex(null);
+  };
+
+  const handleNext = () => {
+    setSelectedImageIndex((prevIndex) => (prevIndex + 1) % imageList.length);
+  };
+
+  const handlePrevious = () => {
+    setSelectedImageIndex((prevIndex) =>
+      prevIndex === 0 ? imageList.length - 1 : prevIndex - 1
+    );
   };
 
   return (
@@ -57,10 +68,10 @@ function Gallery() {
         <CircularProgress />
       ) : (
         <ImageList sx={{ width: "80%" }}>
-          {imageList.map((item) => (
+          {imageList.map((item, index) => (
             <ImageListItem
               key={item.img}
-              onClick={() => handleClickOpen(item.img)}
+              onClick={() => handleClickOpen(index)}
             >
               <img
                 srcSet={`${item.img}`}
@@ -69,25 +80,57 @@ function Gallery() {
                 loading="lazy"
                 style={{ maxHeight: "30rem" }}
               />
-              {/* <ImageListItemBar
-                title={item.title}
-                subtitle={<span>{item.desc}</span>}
-                position="below"
-              /> */}
             </ImageListItem>
           ))}
         </ImageList>
       )}
-      <Dialog open={open} onClose={handleClose} maxWidth="lg">
-        <DialogContent>
+      <Dialog open={open} onClose={handleClose} maxWidth="lg" fullWidth>
+        <DialogContent
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            position: "relative",
+            overflow: "hidden",
+          }}
+        >
+          <IconButton
+            onClick={handlePrevious}
+            sx={{
+              position: "absolute",
+              top: "50%",
+              left: "1rem",
+              transform: "translateY(-50%)",
+              zIndex: 1,
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              color: "white",
+            }}
+          >
+            <ArrowBack />
+          </IconButton>
           <img
-            src={selectedImage}
-            alt=""
+            src={imageList[selectedImageIndex]?.img}
+            alt={imageList[selectedImageIndex]?.title}
             style={{
-              width: "100%",
-              height: "auto",
+              maxWidth: "100%",
+              maxHeight: "90vh",
+              objectFit: "contain",
             }}
           />
+          <IconButton
+            onClick={handleNext}
+            sx={{
+              position: "absolute",
+              top: "50%",
+              right: "1rem",
+              transform: "translateY(-50%)",
+              zIndex: 1,
+              backgroundColor: "rgba(0, 0, 0, 0.5)",
+              color: "white",
+            }}
+          >
+            <ArrowForward />
+          </IconButton>
         </DialogContent>
       </Dialog>
     </Box>
