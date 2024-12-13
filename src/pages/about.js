@@ -54,15 +54,21 @@ function About() {
                 user experiences and improve customer satisfaction.
               </Typography>
               <Typography variant="body1" paragraph>
-                In my current role at Neighborly, I have contributed to the
+                In my previous role at Neighborly, I contributed to the
                 development and launch of multiple new applications, all of
-                which have received positive feedback from users. I take pride
-                in my ability to collaborate effectively with cross-functional
-                teams, and I have experience building a rules engine for a call
-                center application that improved overall customer engagement.
-                Additionally, I have a solid track record of reducing downtime
-                and increasing system reliability through the maintenance of
-                application endpoints.
+                which received positive feedback from users. I took pride in my
+                ability to collaborate effectively with cross-functional teams
+                and built a rules engine for a call center application that
+                improved overall customer engagement. Additionally, I maintained
+                application endpoints, reducing downtime and increasing system
+                reliability.
+              </Typography>
+              <Typography variant="body1" paragraph>
+                I have now transitioned to a new role as an Application
+                Developer II at DR Horton. In this position, I am excited to
+                bring my expertise in application development and system
+                reliability to a new team, continuing to drive innovation and
+                enhance user experiences.
               </Typography>
               <Typography variant="body1" paragraph>
                 With a full-stack development background, my expertise spans a
