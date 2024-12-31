@@ -16,32 +16,43 @@ function About() {
         minHeight: "100vh",
         display: "flex",
         justifyContent: "center",
-        alignItems: "center",
+        // alignItems: "center",
         background: "rgb(34,34,34)",
         background:
           "linear-gradient(13deg, rgba(34,34,34,0.5830707282913166) 1%, rgba(246,246,246,1) 100%)",
       }}
     >
-      <Card
-        style={{
-          width: "80%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "stretch",
-          marginTop: "2rem",
-          marginBottom: "2rem",
-        }}
-      >
-        <Grid container>
-          <Grid item xs={12} md={4}>
+      <Grid container>
+        <Grid style={{ marginLeft: "2rem" }}>
+          <Card
+            style={{
+              width: "30vw",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "stretch",
+              marginTop: "2rem",
+              marginBottom: "2rem",
+            }}
+          >
             <CardMedia
               component="img"
               image={profileImage}
               alt="About Me Image"
               style={{ height: "100%", width: "100%", objectFit: "cover" }}
             />
-          </Grid>
-          <Grid item xs={12} md={8}>
+          </Card>
+        </Grid>
+        <Grid style={{ marginLeft: "2rem" }}>
+          <Card
+            style={{
+              width: "60vw",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              marginTop: "2rem",
+              marginBottom: "2rem",
+            }}
+          >
             <CardContent>
               <Typography variant="h4" gutterBottom>
                 About Me
@@ -89,9 +100,9 @@ function About() {
                 more about my experience and projects.
               </Typography>
             </CardContent>
-          </Grid>
+          </Card>
         </Grid>
-      </Card>
+      </Grid>
     </Box>
   );
 }
