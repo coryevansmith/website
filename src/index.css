@@ -11,4 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.box {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    13deg,
+    rgba(34, 34, 34, 0.583) 1%,
+    rgba(246, 246, 246, 1) 100%
+  );
+  position: relative;
+  width: 100%;
+}
+
+
+
 @import url("https://fonts.googleapis.com/css2?family=DotGothic16&family=VT323&display=swap");
